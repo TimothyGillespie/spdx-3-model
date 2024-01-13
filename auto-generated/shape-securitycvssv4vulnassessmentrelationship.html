@@ -1152,21 +1152,21 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="s">```&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf security:VulnAssessmentRelationship ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:decimal ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;vectorString&quot; ;</span>
-<span class="s">            sh:path security:vectorString ],</span>
+<span class="s">            sh:name &quot;score&quot; ;</span>
+<span class="s">            sh:path security:score ],</span>
 <span class="s">        [ sh:class security:CvssSeverityType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;severity&quot; ;</span>
 <span class="s">            sh:path security:severity ],</span>
-<span class="s">        [ sh:datatype xsd:decimal ;</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;score&quot; ;</span>
-<span class="s">            sh:path security:score ] .</span>
+<span class="s">            sh:name &quot;vectorString&quot; ;</span>
+<span class="s">            sh:path security:vectorString ] .</span>
 </pre></div>
 
             
@@ -1196,7 +1196,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 20:44:17 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Sat, 13 Jan 2024 19:58:10 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1257,7 +1257,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_360").offset().top - 100
+          scrollTop: $("#sd_346").offset().top - 100
       }, 100);
     });
 

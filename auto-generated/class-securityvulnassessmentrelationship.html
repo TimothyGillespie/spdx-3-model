@@ -1723,15 +1723,7 @@ distinguishing the License from other Licenses.</span>
 <span class="s">External property restriction on /Core/Relationship/to: minCount: 1&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:Relationship ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:Element ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;assessedElement&quot; ;</span>
-<span class="s">            sh:path security:assessedElement ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;modifiedTime&quot; ;</span>
-<span class="s">            sh:path security:modifiedTime ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">    sh:property [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;withdrawnTime&quot; ;</span>
 <span class="s">            sh:path security:withdrawnTime ],</span>
@@ -1739,10 +1731,18 @@ distinguishing the License from other Licenses.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;publishedTime&quot; ;</span>
 <span class="s">            sh:path security:publishedTime ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;modifiedTime&quot; ;</span>
+<span class="s">            sh:path security:modifiedTime ],</span>
 <span class="s">        [ sh:class core:Agent ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;/Core/suppliedBy&quot; ;</span>
-<span class="s">            sh:path core:suppliedBy ] .</span>
+<span class="s">            sh:path core:suppliedBy ],</span>
+<span class="s">        [ sh:class core:Element ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;assessedElement&quot; ;</span>
+<span class="s">            sh:path security:assessedElement ] .</span>
 </pre></div>
 
             
@@ -1772,7 +1772,7 @@ distinguishing the License from other Licenses.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 20:44:16 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Sat, 13 Jan 2024 19:58:10 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>

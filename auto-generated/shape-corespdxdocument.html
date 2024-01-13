@@ -1052,6 +1052,7 @@ Information we wish to preserve about a specific instance of serialization of th
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">sh:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/ns/shacl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">simplelicensing:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/SimpleLicensing/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
 <span class="nn">core</span><span class="p">:</span><span class="nt">SpdxDocument</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">Class</span><span class="p">,</span>
         <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
@@ -1062,13 +1063,14 @@ Information we wish to preserve about a specific instance of serialization of th
 <span class="s">Any instance of serialization of SPDX data MUST NOT contain more than one SpdxDocument element definition.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:ElementCollection ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:NamespaceMap ;</span>
-<span class="s">            sh:name &quot;namespaceMap&quot; ;</span>
-<span class="s">            sh:path core:namespaceMap ],</span>
-<span class="s">        [ sh:class core:ExternalMap ;</span>
+<span class="s">    sh:property [ sh:class core:ExternalMap ;</span>
 <span class="s">            sh:name &quot;imports&quot; ;</span>
 <span class="s">            sh:path core:imports ],</span>
+<span class="s">        [ sh:class core:NamespaceMap ;</span>
+<span class="s">            sh:name &quot;namespaceMap&quot; ;</span>
+<span class="s">            sh:path core:namespaceMap ],</span>
 <span class="s">        [ sh:class simplelicensing:AnyLicenseInfo ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;dataLicense&quot; ;</span>
 <span class="s">            sh:path core:dataLicense ] .</span>
 </pre></div>
@@ -1100,7 +1102,7 @@ Information we wish to preserve about a specific instance of serialization of th
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 20:44:17 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Sat, 13 Jan 2024 19:58:10 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1161,7 +1163,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_348").offset().top - 100
+          scrollTop: $("#sd_312").offset().top - 100
       }, 100);
     });
 
